@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Chat 5.0</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QSplitter" name="splitter">
+                        <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                        </property>
+                        <widget class="QListWidget" name="userList">
+                            <property name="sizePolicy">
+                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                    <horstretch>1</horstretch>
+                                    <verstretch>1</verstretch>
+                                </sizepolicy>
+                            </property>
+                        </widget>
+                        <widget class="QWidget" name="messageArea">
+                            <layout class="QVBoxLayout" name="verticalLayout_2">
+                                <item>
+                                    <widget class="QTextEdit" name="messageList">
+                                        <property name="readOnly">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QWidget" name="inputArea">
+                                        <layout class="QHBoxLayout" name="horizontalLayout">
+                                            <item>
+                                                <widget class="QLineEdit" name="messageInput">
+                                                    <property name="placeholderText">
+                                                        <string>Enter message...</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="sendButton">
+                                                    <property name="text">
+                                                        <string>Send</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuFile">
+                <property name="title">
+                    <string>File</string>
+                </property>
+                <addaction name="actionExit"/>
+            </widget>
+            <widget class="QMenu" name="menuSettings">
+                <property name="title">
+                    <string>Settings</string>
+                </property>
+                <addaction name="actionSettings"/>
+            </widget>
+            <addaction name="menuFile"/>
+            <addaction name="menuSettings"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionExit">
+            <property name="text">
+                <string>Exit</string>
+            </property>
+        </action>
+        <action name="actionSettings">
+            <property name="text">
+                <string>Settings</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

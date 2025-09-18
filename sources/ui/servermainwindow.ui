@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ServerMainWindow</class>
+    <widget class="QMainWindow" name="ServerMainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1000</width>
+                <height>700</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Server chat</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                    <widget class="QTreeView" name="userListView">
+                        <property name="alternatingRowColors">
+                            <bool>true</bool>
+                        </property>
+                        <property name="autoScroll">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QSplitter" name="splitter">
+                        <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                        </property>
+                        <widget class="QTextEdit" name="messageLog">
+                            <property name="readOnly">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QWidget" name="controlPanel">
+                            <layout class="QVBoxLayout" name="verticalLayout">
+                                <item>
+                                    <widget class="QLabel" name="label">
+                                        <property name="text">
+                                            <string>Server management</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="startServerButton">
+                                        <property name="text">
+                                            <string>Start server</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="stopServerButton">
+                                        <property name="text">
+                                            <string>Stop server</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="clearLogsButton">
+                                        <property name="text">
+                                            <string>Clear logs</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>1000</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuFile">
+                <property name="title">
+                    <string>File</string>
+                </property>
+                <addaction name="actionExit"/>
+            </widget>
+            <widget class="QMenu" name="menuUsers">
+                <property name="title">
+                    <string>Users</string>
+                </property>
+                <addaction name="actionShow_User_Info"/>
+            </widget>
+            <addaction name="menuFile"/>
+            <addaction name="menuUsers"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionExit">
+            <property name="text">
+                <string>Exit</string>
+            </property>
+        </action>
+        <action name="actionShow_User_Info">
+            <property name="text">
+                <string>User information</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
