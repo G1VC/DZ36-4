@@ -1,0 +1,33 @@
+﻿<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <!-- Ikony prilozheniya -->
+        <file>icons/app_icon.png</file>
+        <file>icons/user.png</file>
+        <file>icons/group.png</file>
+        <file>icons/system.png</file>
+        
+        <!-- Stili -->
+        <file>styles/main.qss</file>
+        
+        <!-- Izobrazheniya -->
+        <file>images/background.jpg</file>
+        
+        <!-- Lokalizatsiya -->
+        <file>translations/ru_RU.qm</file>
+        <file>translations/en_US.qm</file>
+        
+        <!-- Zvukovye fayly -->
+        <file>sounds/message.mp3</file>
+        <file>sounds/notification.mp3</file>
+        
+        <!-- Shrifty -->
+        <file>fonts/Roboto-Regular.ttf</file>
+        <file>fonts/Roboto-Bold.ttf</file>
+        
+        <!-- Resursy interfeysa -->
+        <file>ui/loading.gif</file>
+        <file>ui/error.png</file>
+    </qresource>
+</RCC>
+
